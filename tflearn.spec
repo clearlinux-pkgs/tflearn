@@ -4,7 +4,7 @@
 #
 Name     : tflearn
 Version  : 0.2.2
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/a1/f3/01770ba6242f8e5e557247597843c2a6cb645d46ae430b99756cd580270c/tflearn0.2.2.tar.gz
 Source0  : https://pypi.python.org/packages/a1/f3/01770ba6242f8e5e557247597843c2a6cb645d46ae430b99756cd580270c/tflearn0.2.2.tar.gz
 Summary  : Deep Learning Library featuring a higher-level API for Tensorflow
@@ -36,12 +36,12 @@ python components for the tflearn package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1486253333
+export SOURCE_DATE_EPOCH=1486267951
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1486253333
+export SOURCE_DATE_EPOCH=1486267951
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
