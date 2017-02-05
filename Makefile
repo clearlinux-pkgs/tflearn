@@ -1,5 +1,5 @@
 PKG_NAME := tflearn
-URL := https://pypi.python.org/packages/a1/f3/01770ba6242f8e5e557247597843c2a6cb645d46ae430b99756cd580270c/tflearn0.2.2.tar.gz
+URL := https://github.com/tflearn/tflearn/archive/a9f86d8df475706f76e5c0e98210b7d4faf02206.tar.gz
 
 
 include ../common/Makefile.common
