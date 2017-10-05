@@ -4,12 +4,13 @@
 #
 Name     : tflearn
 Version  : 0.3.2
-Release  : 7
+Release  : 8
 URL      : https://github.com/tflearn/tflearn/archive/0.3.2.tar.gz
 Source0  : https://github.com/tflearn/tflearn/archive/0.3.2.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
+Requires: tflearn-python3
 Requires: tflearn-python
 Requires: Pillow
 Requires: numpy
@@ -32,9 +33,19 @@ BuildRequires : six
 %package python
 Summary: python components for the tflearn package.
 Group: Default
+Requires: tflearn-python3
 
 %description python
 python components for the tflearn package.
+
+
+%package python3
+Summary: python3 components for the tflearn package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the tflearn package.
 
 
 %prep
@@ -45,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1497753473
+export SOURCE_DATE_EPOCH=1507179908
 python3 setup.py build -b py3
 
 %install
@@ -59,5 +70,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
