@@ -4,7 +4,7 @@
 #
 Name     : tflearn
 Version  : 0.3.2
-Release  : 25
+Release  : 26
 URL      : https://github.com/tflearn/tflearn/archive/0.3.2.tar.gz
 Source0  : https://github.com/tflearn/tflearn/archive/0.3.2.tar.gz
 Summary  : No detailed summary available
