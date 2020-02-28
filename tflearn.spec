@@ -4,10 +4,10 @@
 #
 Name     : tflearn
 Version  : 0.3.2
-Release  : 31
+Release  : 32
 URL      : https://github.com/tflearn/tflearn/archive/0.3.2.tar.gz
 Source0  : https://github.com/tflearn/tflearn/archive/0.3.2.tar.gz
-Summary  : No detailed summary available
+Summary  : Deep Learning Library featuring a higher-level API for TensorFlow
 Group    : Development/Tools
 License  : MIT
 Requires: tflearn-license = %{version}-%{release}
@@ -48,6 +48,7 @@ python components for the tflearn package.
 Summary: python3 components for the tflearn package.
 Group: Default
 Requires: python3-core
+Provides: pypi(tflearn)
 
 %description python3
 python3 components for the tflearn package.
@@ -62,7 +63,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576091623
+export SOURCE_DATE_EPOCH=1582910524
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
