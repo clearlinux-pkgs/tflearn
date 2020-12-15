@@ -4,7 +4,7 @@
 #
 Name     : tflearn
 Version  : 0.3.2
-Release  : 36
+Release  : 37
 URL      : https://github.com/tflearn/tflearn/archive/0.3.2.tar.gz
 Source0  : https://github.com/tflearn/tflearn/archive/0.3.2.tar.gz
 Summary  : Deep Learning Library featuring a higher-level API for TensorFlow
